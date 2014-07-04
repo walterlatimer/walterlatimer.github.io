@@ -3,55 +3,59 @@ html, body {
   height: 100%;
 }
 html {
-  background-color: #FFE53D;
+  display: table;
 }
 body {
-  font-family:"Italian Plate Mono Regular", monospace;
-  font-weight: normal;
-  font-style: normal;
-  color: #000;
-  text-align: center;
-}
-h1 {
-  font-size: 4em;
-}
-ul li {
-  display: inline;
-}
-a:link, a:visited, a:active {
-  border-bottom: 3px solid transparent;
-  padding-bottom: 2px;
-  text-decoration: none;
-  color: black;
-}
-a:hover, {
-  border-bottom: 3px solid black;
-  text-decoration: none;
-  color: black;
+  font: 18px/2 "Roboto", sans-serif;
+  color: #333;
+  display: table-cell;
+  vertical-align: middle;
 }
 header {
-  padding: 50px 0;
-  border: 3px dashed black;
-  margin: 50px;
+  padding-bottom: 60px;
 }
-#front-page {
-  width: 400px;
-  margin: 0 auto;
-  overflow: hidden;
-  text-shadow: 2px 2px 2px #000;
-  letter-spacing:2px;
-  z-index: 0;
+h1 {
+  font-size: 2rem;
 }
-#front-page article {
-  border: 3px solid transparent;
-  padding: 40px;
+h2 {
+  font-size: 1.5rem;
 }
-#front-page article:hover {
-  border: 3px dashed black;
-}
-img {
-  width: 100%;
+i {
+  font-style: italic;
 }
 footer {
-  height: 50px;
+  font-size: .8rem;
+  padding-top: 60px;
+}
+a {
+  padding: 2px;
+}
+a:link, a:visited, a:active {
+  text-decoration: none;
+  color: #333;
+}
+a:hover {
+  background-image: -moz-linear-gradient( left top, right bottom ,
+      from(red),
+        color-stop(16%, orange),
+        color-stop(32%, yellow),
+        color-stop(48%, green),
+        color-stop(60%, blue),
+    color-stop(76%, indigo),
+    to(violet));
+  background-image: -webkit-gradient(linear,  left top,  right bottom, 
+      color-stop(0.00, red), 
+      color-stop(16%, orange),
+      color-stop(32%, yellow),
+      color-stop(48%, green),
+      color-stop(60%, blue),
+      color-stop(76%, indigo),
+      color-stop(1.00, violet));
+  color: white;
+}
+section {
+  text-align: center;
+}
+li {
+  list-style: none;
 }
